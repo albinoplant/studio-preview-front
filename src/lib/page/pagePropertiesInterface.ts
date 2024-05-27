@@ -1,0 +1,3 @@
+interface PagePropertiesInterface {
+    title: string
+}

@@ -1,0 +1,3 @@
+interface PageModel {
+    name: string
+}
