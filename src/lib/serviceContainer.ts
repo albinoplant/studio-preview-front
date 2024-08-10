@@ -3,6 +3,7 @@ import Strapi from "strapi-sdk-js";
 import { SECRET_STRAPI_TOKEN, SECRET_STRAPI_URL } from "$env/static/private";
 import NavigationRestRepository from "./navigationRestRepository";
 import StrapiClient from "./strapi/client";
+import InfoRestRepository from "./infoRestRepository";
 
 export class ServiceContainer {
     private services: Map<string,any>;
@@ -30,5 +31,6 @@ const strapi = new Strapi({
 serviceContainer
   .register('pageRepository', new PageRestRepository(strapi))
   .register('navigationRepository', new NavigationRestRepository(strapiClientFetchBased))
+  .register('infoRepository', new InfoRestRepository(strapiClientFetchBased))
 
 export {serviceContainer};

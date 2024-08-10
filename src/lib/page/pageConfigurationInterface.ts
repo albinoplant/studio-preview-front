@@ -1,4 +1,5 @@
 interface PageConfiguration {
     page: PagePropertiesInterface,
-    navigation: NavigationItemModel[]
+    navigation: NavigationItemModel[],
+    info: InfoModel
 }

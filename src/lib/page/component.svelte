@@ -1,9 +1,10 @@
 <script lang="ts">
+	import Hero from "$lib/components/Hero.svelte";
+
     export let config: Component
 </script>
 {#if config.__component == 'section.hero'}
-    <h1>{config.title}</h1>
-    <h2>{config.subtitle}</h2>
+    <Hero {...config}/>
 {/if}
 
 <code>{config.__component}</code>
