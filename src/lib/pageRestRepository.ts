@@ -6,9 +6,12 @@ export default class PageRestRepository implements PageRepositoryInterface {
     ) {
     }
     async findById(id: number): Promise<PagePropertiesInterface> {
-        const response = await this.client.findOne<BaseModel<PageModel>>("pages", id)
+        const response = await this.client.findOne<BaseModel<PageModel>>("pages", id, {populate: "*"})
+
         return {
+            ...response.data.attributes,
+            id: response.data.id,
             title: response.data.attributes.name
-        }
+        } as unknown as PagePropertiesInterface
     }
 }

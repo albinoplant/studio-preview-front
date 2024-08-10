@@ -1,4 +1,4 @@
-import { loadHome } from "$lib/load";
+import { loadTemplate } from "$lib/load";
 
 export const prerender = true;
-export const load = loadHome
+export const load = loadTemplate

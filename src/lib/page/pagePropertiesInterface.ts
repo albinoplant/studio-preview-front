@@ -1,3 +1,5 @@
 interface PagePropertiesInterface {
-    title: string
+    title: string,
+    id: number,
+    content: Component[]
 }

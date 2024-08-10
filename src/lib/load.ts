@@ -9,13 +9,12 @@ import { SECRET_NAVIGATION_ID } from "$env/static/private";
 export const loadTemplate = async ( event: LoadEvent ) => {
     const pageRepo: PageRepositoryInterface = serviceContainer.get('pageRepository')
     const navigationRepo: NavigationRepositoryInterface = serviceContainer.get('navigationRepository')
-    let id = 1
-    if (!!event.params.page) {
-        const navigationItem = await navigationRepo.findItemOfNavigationIdAndName(Number.parseInt(SECRET_NAVIGATION_ID), event.url.pathname)
-        id = navigationItem.related.id
-    }
+    const navigationItem = await navigationRepo.findItemOfNavigationIdAndName(Number.parseInt(SECRET_NAVIGATION_ID), event.url.pathname)
+    const id = navigationItem.related.id
+    const mainNavigationItems = await navigationRepo.findItemsOfNavigationId(Number.parseInt(SECRET_NAVIGATION_ID))
     try {
-        return await pageRepo.findById(id)
+        const page = await pageRepo.findById(id)
+        return {page: page, navigation: mainNavigationItems}
     } catch (e) {
         console.error(e)
         error(500, 'Something went wrong')
