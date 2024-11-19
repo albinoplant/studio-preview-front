@@ -17,5 +17,10 @@ I want MVP to have all components necessary to build a basic leaflet page.
 - running live playground page
 
 ## Run
+To run the project you need to have [studio-preview](https://github.com/albinoplant/studio-preview) up and running
 
-`npm run develop`
+Then:
+
+- `cp .env.example .env`
+
+- `npm run develop`
