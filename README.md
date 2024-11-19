@@ -4,7 +4,7 @@ Working title of the project is **studio-preview**. Open source site creator bas
 [studio-preview repo](https://github.com/albinoplant/studio-preview)
 
 ## Example
-Let's say we have an example leaflet page:
+As an example we have a preconfigured basic leaflet page:
 ![image](https://albinoplant.github.io/images/studio-preview/about-me-create-todo.png)
 We want to add another page with personal info, a classic about-me page.
 
