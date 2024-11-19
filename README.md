@@ -4,13 +4,17 @@ Working title of the project is **studio-preview**. Open source site creator bas
 [studio-preview repo](https://github.com/albinoplant/studio-preview)
 
 ## Example
-You go to backend admin panel and setup preconfigured Page entity. This makes it an available page on your frontend.
+Let's say we have an example leaflet page:
+![image](https://albinoplant.github.io/images/studio-preview/about-me-create-todo.png)
+We want to add another page with personal info, a classic about-me page.
+
+You go to backend admin panel and create new Page. This makes it available on your frontend.
 ![image](https://albinoplant.github.io/images/studio-preview/about-me-create.png)
 Then you can add it to navigation so it appears on the top app bar.
 ![image](https://albinoplant.github.io/images/studio-preview/about-me-create-sample.png)
 
 ## Future
-I want MVP to have all components necessary to build a basic leaflet page.
+I want MVP to have all components necessary to build a basic leaflet page. For now we only have one simple Hero component from the example. Coming soon will be a section for placing text and photos as well as a classic carousel.
 
 #### Next:
 -  customizing the layout and theme that will leverage the Tailwind/DaisyUI configuration
