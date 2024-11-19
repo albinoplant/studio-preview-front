@@ -1,38 +1,21 @@
-# create-svelte
+# Frontend for Strapi CMS backend
+Working title of the project is **studio-preview**. Open source site creator based on headless CMS Strapi backend. JavaScript framework used is [Svelte](https://svelte.dev/) due to its performance.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+[studio-preview repo](https://github.com/albinoplant/studio-preview)
 
-## Creating a project
+## Example
+You go to backend admin panel and setup preconfigured Page entity. This makes it an available page on your frontend.
+![image](https://albinoplant.github.io/images/studio-preview/about-me-create.png)
+Then you can add it to navigation so it appears on the top app bar.
+![image](https://albinoplant.github.io/images/studio-preview/about-me-create-sample.png)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Future
+I want MVP to have all components necessary to build a basic leaflet page.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+#### Next:
+-  customizing the layout and theme that will leverage the Tailwind/DaisyUI configuration
+- running live playground page
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Run
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+`npm run develop`
