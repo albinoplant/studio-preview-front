@@ -1,4 +1,4 @@
-interface Component {
+interface BaseComponent {
     id: number,
     __component: string,
     title: string,
